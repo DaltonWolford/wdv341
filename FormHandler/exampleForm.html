@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>WDV341 Intro PHP - Form Example</title>
+</head>
+
+<body>
+<h1>WDV341 Intro PHP</h1>
+<h2>WDV101 Intro HTML and CSS Chapter 9 - Creating Forms - Code Example</h2>
+<p><strong>Basic Form Handler</strong> - This process will display the 'name = value' pairs for all the elements of a form. This summary will on any number of form elements regardless of their name attribute value. </p>
+<p>Use <strong>basicFormExample.php</strong> in the action attribute of your form. </p>
+<p>Field '<strong>name</strong>' - The value of the name attribute from the HTML form element.</p>
+<p>Field <strong>'value</strong>' - The value entered in the field. This will vary depending upon the HTML form element.</p>
+<form id="form1" name="form1" method="post" action="formHandler.php">
+<input name="testcheckbox3" type="checkbox" value="1"  
+    tabindex="-1" autocomplete="false"  style="display:none">
+  <p>First Name: 
+    <input type="text" name="firstName" id="firstName" />
+</p>
+  <p>Last Name: 
+    <input type="text" name="lastName" id="lastName" />
+  </p>
+  <p>School: 
+    <input type="text" name="school" id="school" />
+  </p>
+  <p>Radio Buttons:<br>
+    <input type="radio" name="radio" id="radio1" value="radio1" >
+    <label for="radio1">radio 1</label> <br>
+    <input type="radio" name="radio" id="radio2" value="radio2">
+    <label for="radio2">radio 2</label> <br>
+    <input type="radio" name="radio" id="radio3" value="radio3">
+    <label for="radio3">radio 3</label>
+  </p>
+  <p>Checkboxes:<br>
+    <input type="checkbox" name="checkbox1" id="checkbox1">
+    <label for="checkbox1">checkbox 1</label><br>
+    <input type="checkbox" name="checkbox2" id="checkbox2">
+    <label for="checkbox2">checkbox 2</label>
+  </p>
+  <p>
+    <label for="dropdown">Drop down: </label>
+    <select name="dropdown" id="dropdown">
+      <option value="">Choose Type</option>
+      <option value="dropdown1">Dropdown 1</option>
+      <option value="dropdown2">Dropdown 2</option>
+      <option value="dropdown3">Dropdown 3</option>
+    </select>
+  </p>
+  <p>
+    <input type="submit" name="submit" id="submit" value="Submit" />
+    <input type="reset" name="reset" id="reset" value="Reset" />
+  </p>
+</form>
+
+<p>&nbsp;</p>
+</body>
+
+</html>
